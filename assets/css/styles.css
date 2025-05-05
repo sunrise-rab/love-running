@@ -99,6 +99,11 @@ main {
     padding: 20px 0;
     list-style: none;
 }
+#social-media i{
+    font-size: 160%;
+    padding: 5%;
+    color: #3a3a3a;
+}
 /* media query: tablets and larger screen(768px)*/
 @media screen and (min-width: 768px){
     /* Header */
