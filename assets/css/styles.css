@@ -90,7 +90,10 @@ nav {
 main {
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
-    margin-top: 75px;
+    margin-top: 47px;
+    /* Enable flex properties for child element*/
+    display: flex;
+    flex-direction: column;
 }
 /* hero section*/
 #hero{
@@ -192,6 +195,60 @@ main {
 #photo{
     line-height: 0;
 }
+
+/*sign up page*/
+
+#signup{
+    background-image: url("../images/signup-image.webp");
+    background-size: cover;
+    background-position: 75%;
+    flex-grow: 1;
+    padding: 20px 10% 0 10%;
+
+}
+#signup h2 {
+    color: #fafafa;
+    margin-bottom: 20px;
+}
+#sign-form {
+    color: #ffffff;
+    background-color: rgba(60, 60, 60, 0.6);
+    padding: 30px;
+    
+}
+.text-input{
+    background-color: transparent;
+    color: #fafafa;
+    width: 100%;
+    border: 1px solid #fafafa ;
+    border-radius: 2px;
+    height: 25px;
+    margin: 5px 0px 20px 0;
+    padding: 0px 5px;
+}
+#signup > label{
+    height: 25px;
+    
+}
+.radio-buttons {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.radio-buttons label{
+    padding: 5px;
+    width: 60px;
+}
+
+.join-button{
+    border-radius: 2px;
+    background-color: #454b1b;
+    color: #fafafa;
+    font-size: 100%;
+    margin-top: 20px;
+    padding: 15px 32px;
+}
 /* Footer */
 
 #social-media{
@@ -205,6 +262,14 @@ main {
     font-size: 160%;
     padding: 5%;
     color: #3a3a3a;
+}
+/*media query for photo dispaly on a screen 576px and above*/
+@media screen  and (min-width: 576px){
+    #photos{
+        column-count: 2;
+        column-gap: 0;
+    }
+
 }
 /* media query: tablets and larger screen(768px)*/
 @media screen and (min-width: 768px){
@@ -257,6 +322,12 @@ main{
 #benefits-mental{
     text-align: end;
 }
+
+/* gallery*/
+#photos{
+    column-count: 3;
+    column-gap: 0;
+}
 }
 /* Media query for screens size of 992px and higher*/
 @media screen and (min-width: 992px) {
@@ -266,7 +337,11 @@ main{
     border-bottom: 1px solid #3a3a3a;
 }
 
-
+/*Gallery*/
+#photos{
+    column-count: 4;
+    column-gap: 0;
+}
     
 }
 
