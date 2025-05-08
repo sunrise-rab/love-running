@@ -35,32 +35,31 @@
         <section id="signup">
             <form id="sign-form" action="https://formdump.codeinstitute.net"  method="post">
                 <h2><i class="fa-solid fa-heart-pulse"></i> LET'S GET YOU SINGED UP!</h2>
-                <label for="first-name" class="full-name-lb">First Name</label><br>
+                <label for="first-name">First Name</label><br>
                 <input id="first-name" name="first-name"  type="text" class="text-input" required>
                 <br>
-                <label for="last-name" class="last-name-lb">Last Name</label><br>
+                <label for="last-name" >Last Name</label><br>
                 <input id="last-name" name="last-name" type="text" class="text-input" required>
                 <br>
-                <label for="email" class="email-lb">Email Address</label><br>
+                <label for="email">Email Address</label><br>
                 <input id="email" name="email"  type="email" class="text-input" required>
                 <br>
-                <div id="radio-buttons">
-                
-                <label for="radio">
-                    <input id="road" type="radio" value="road" name="running-preference" required>
-                    Road
-                </label>
-                
-                <label  for="trail">
+                <div class="radio-buttons">
+                <div>
+                   <label for="radio"> Road</label>
+                   <input id="road" type="radio" value="road" name="running-preference" required>
+                  
+                </div>
+                <div>
+                    <label  for="trail"> Trail</label>
                     <input id="trail" type="radio" value="trail" name="running-preference" required>
-                    Trail
-                </label>
-                
-                <label for="both">
-                    <input id="both" type="radio" value="both" name="running-preference" required>
-                    Both
-                </label>
-                
+                </div>
+                <div>
+                   <label for="both"> Both</label>
+                   <input id="both" type="radio" value="both" name="running-preference" required>
+                </div>
+                </div>
+
                 <button class="join-button" type="submit">Let's Run</button>
 
             </form>
